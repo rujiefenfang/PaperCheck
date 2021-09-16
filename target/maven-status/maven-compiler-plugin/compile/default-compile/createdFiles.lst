@@ -1,3 +1,4 @@
 main.class
+utils\TxtUtils.class
 utils\SimHashUtils.class
 utils\HammingUtils.class
