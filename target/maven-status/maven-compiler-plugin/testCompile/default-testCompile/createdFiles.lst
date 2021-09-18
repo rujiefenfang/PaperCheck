@@ -1,2 +1,4 @@
+mainTest.class
 SimHashUtilsTest.class
+HammingUtilsTest.class
 TxtUtilsTest.class
