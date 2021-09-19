@@ -10,11 +10,24 @@ public class TxtUtils {
      * @return str Txt文件的String字符串
      */
     public static String getTxtString(String filePath){
-
+        if (null==filePath){
+            try {
+                throw new FileNotFoundException("文件名错误");
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+        File file = new File(filePath);
+        if(!file.exists()||!file.isFile()){
+            try {
+                throw new FileNotFoundException("文件错误，请重新检查文件名或者该路径是否是文件夹");
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
         String str = "";
         String strLine;
         // 将 txt文件按行读入 str中
-        File file = new File(filePath);
         FileInputStream fileInputStream = null;
         try {
             fileInputStream = new FileInputStream(file);
