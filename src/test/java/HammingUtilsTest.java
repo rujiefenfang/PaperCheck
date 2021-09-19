@@ -13,6 +13,5 @@ public class HammingUtilsTest {
         String txtString2 = TxtUtils.getTxtString(filePath2);
         String simHash1 = SimHashUtils.getSimHash(txtString1);
         String simHash2 = SimHashUtils.getSimHash(txtString2);
-        System.out.println(HammingUtils.getSimilarity(simHash1,simHash2));
     }
 }

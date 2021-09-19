@@ -10,6 +10,7 @@ public class TxtUtils {
      * @return str Txt文件的String字符串
      */
     public static String getTxtString(String filePath){
+
         String str = "";
         String strLine;
         // 将 txt文件按行读入 str中

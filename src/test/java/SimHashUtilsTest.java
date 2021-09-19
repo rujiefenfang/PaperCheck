@@ -6,8 +6,8 @@ public class SimHashUtilsTest {
 
     @Test
     public void getHashTest(){
-        System.out.println(SimHashUtils.getHash("我今天早上要去打码"));
-        System.out.println(SimHashUtils.getHash("我今天早上不要去打码"));
+       SimHashUtils.getHash("我今天早上要去打码");
+       SimHashUtils.getHash("我今天早上不要去打码");
     }
     @Test
     public void getSimHashTest(){
@@ -17,7 +17,5 @@ public class SimHashUtilsTest {
         String txtString2 = TxtUtils.getTxtString(filePath2);
         String simHash1 = SimHashUtils.getSimHash(txtString1);
         String simHash2 = SimHashUtils.getSimHash(txtString2);
-        System.out.println(simHash1);
-        System.out.println(simHash2);
     }
 }
